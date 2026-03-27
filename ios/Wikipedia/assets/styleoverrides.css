@@ -1,0 +1,110 @@
+
+/* FIND IN PAGE STYLES */
+
+.findInPageMatch {
+    background-color: rgba(255, 204, 51, 0.3) !important;
+    color: black !important;
+    border-radius: 2px !important
+}
+
+.pcs-theme-dark .findInPageMatch,
+.pcs-theme-black .findInPageMatch {
+    background-color: rgba(247, 215, 121, 0.7) !important;
+    color: black !important;
+    border-radius: 2px !important
+}
+
+.findInPageMatch_Focus {
+    background-color: #fc3 !important
+}
+
+.pcs-theme-dark .findInPageMatch_Focus,
+.pcs-theme-black .findInPageMatch_Focus {
+    background-color: #fc3 !important
+}
+
+/* MISC STYLES */
+
+/*
+// Use sparingly so we don't diverge too much.
+
+// This was added so ref link taps don't show underline. Move upstream later if possible.
+*/
+a:hover {
+    text-decoration: none !important
+}
+
+/*
+    iOS 'Smart invert' exclusions.
+    Makes article images not go photo-negative when 'Smart invert' is enabled.
+
+    TODO: migrate this to wikimedia-page-library with '.pagelib-platform-ios' specifier
+*/
+@media (inverted-colors) {
+	/* Images, video. */
+    img,
+    video {
+        filter: invert(100%)
+    }
+    /*
+    Image backgrounds.
+        Footer 'Read more' item images.
+        Other places...
+    */
+    div[style*='background-image'] {
+        filter: invert(100%)
+    }
+    /*
+    Math formulas.
+        'en > Quadratic equation'
+    */
+    img.mwe-math-fallback-image-inline {
+        filter: invert(0%)
+    }
+}
+
+/*
+    Fix: On iPad with the Table of Contents sidebar visible, the WKWebView viewport
+    is nearly square. When the tab bar hides/shows during scrolling, the adjusted
+    content inset changes window.innerHeight, which can flip the CSS orientation
+    between landscape and portrait. This causes images to jump between the
+    @media (orientation:landscape) rule (width:50%) and the @media (min-device-width:768px)
+    rule (width:60%). Overriding the landscape rule to also use 60% prevents the visual
+    jump while keeping images consistently sized with the tablet portrait layout.
+*/
+@media (orientation:landscape) and (min-device-width:768px) {
+    img.pcs-widen-image-override {
+        width: 60% !important;
+        max-width: 60% !important;
+    }
+    .pcs-widen-image-override.pcs-lazy-load-placeholder {
+        min-width: 60%;
+    }
+}
+
+/* Prevent text size increase on landscape on non-iPads: T233254 and https://stackoverflow.com/a/2711132 */
+/* Override body font to prevent issues for arabic wiki: T307407 */
+body {
+    -webkit-text-size-adjust: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, sans-serif
+}
+
+/* REFERENCE STYLES */
+
+.reference-highlight a {
+    color: #000000 !important
+}
+
+.pcs-theme-dark .reference-highlight a,
+.pcs-theme-black .reference-highlight a {
+    color: #ffffff !important
+}
+
+.reference-highlight a {
+    color: #000000 !important
+}
+
+.pcs-theme-dark .reference-highlight a,
+.pcs-theme-black .reference-highlight a {
+    color: #ffffff !important
+}

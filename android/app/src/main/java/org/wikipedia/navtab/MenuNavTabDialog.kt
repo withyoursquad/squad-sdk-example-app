@@ -1,0 +1,199 @@
+package org.wikipedia.navtab
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.core.view.isVisible
+import androidx.core.widget.ImageViewCompat
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.squadsports.sdk.SquadSportsSDK
+import com.squadsports.sdk.SquadExperienceActivity
+import org.wikipedia.R
+import org.wikipedia.WikipediaApp
+import org.wikipedia.activity.FragmentUtil
+import org.wikipedia.analytics.eventplatform.ActivityTabEvent
+import org.wikipedia.analytics.eventplatform.BreadCrumbLogEvent
+import org.wikipedia.analytics.eventplatform.DonorExperienceEvent
+import org.wikipedia.analytics.eventplatform.PlacesEvent
+import org.wikipedia.analytics.eventplatform.YearInReviewEvent
+import org.wikipedia.auth.AccountUtil
+import org.wikipedia.databinding.ViewMainDrawerBinding
+import org.wikipedia.games.GamesHubActivity
+import org.wikipedia.games.WikiGames
+import org.wikipedia.page.ExtendedBottomSheetDialogFragment
+import org.wikipedia.places.PlacesActivity
+import org.wikipedia.settings.Prefs
+import org.wikipedia.suggestededits.SuggestedEditsTasksActivity
+import org.wikipedia.util.DimenUtil
+import org.wikipedia.util.ResourceUtil.getThemedColorStateList
+import org.wikipedia.yearinreview.YearInReviewViewModel
+
+class MenuNavTabDialog : ExtendedBottomSheetDialogFragment() {
+    interface Callback {
+        fun usernameClick()
+        fun loginClick()
+        fun talkClick()
+        fun settingsClick()
+        fun watchlistClick()
+        fun contribsClick()
+        fun donateClick(campaignId: String? = null)
+        fun yearInReviewClick()
+    }
+
+    private var _binding: ViewMainDrawerBinding? = null
+    private val binding get() = _binding!!
+
+    private val yirEntrySlide get() = if (AccountUtil.isLoggedIn) "li_profile" else "lo_profile"
+    private val yirEnabled get() = YearInReviewViewModel.isAccessible && Prefs.isYearInReviewEnabled
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        _binding = ViewMainDrawerBinding.inflate(inflater, container, false)
+
+        if (yirEnabled) {
+            YearInReviewEvent.submit(action = "impression", slide = yirEntrySlide)
+        }
+        binding.mainDrawerYearInReviewContainer.isVisible = yirEnabled
+
+        binding.mainDrawerAccountContainer.setOnClickListener {
+            BreadCrumbLogEvent.logClick(requireActivity(), binding.mainDrawerAccountContainer)
+            if (AccountUtil.isLoggedIn && !AccountUtil.isTemporaryAccount) {
+                callback()?.usernameClick()
+            } else {
+                callback()?.loginClick()
+            }
+            dismiss()
+        }
+
+        binding.mainDrawerTalkContainer.setOnClickListener {
+            BreadCrumbLogEvent.logClick(requireActivity(), binding.mainDrawerTalkContainer)
+            callback()?.talkClick()
+            dismiss()
+        }
+
+        binding.mainDrawerWatchlistContainer.setOnClickListener {
+            BreadCrumbLogEvent.logClick(requireActivity(), binding.mainDrawerWatchlistContainer)
+            callback()?.watchlistClick()
+            dismiss()
+        }
+
+        binding.mainDrawerGamesHubContainer.setOnClickListener {
+            requireActivity().startActivity(GamesHubActivity.newIntent(requireActivity()))
+            dismiss()
+        }
+
+        binding.mainDrawerPlacesContainer.setOnClickListener {
+            PlacesEvent.logAction("places_click", "main_nav_tab")
+            requireActivity().startActivity(PlacesActivity.newIntent(requireActivity()))
+            dismiss()
+        }
+
+        binding.mainDrawerSquadContainer.setOnClickListener {
+            if (SquadSportsSDK.isInitialized) {
+                SquadExperienceActivity.launch(requireActivity())
+                dismiss()
+            } else {
+                android.widget.Toast.makeText(
+                    requireContext(),
+                    "Squad is not configured. Set SQUAD_PARTNER_ID and SQUAD_API_KEY environment variables.",
+                    android.widget.Toast.LENGTH_LONG
+                ).show()
+            }
+        }
+
+        binding.mainDrawerSettingsContainer.setOnClickListener {
+            BreadCrumbLogEvent.logClick(requireActivity(), binding.mainDrawerSettingsContainer)
+            callback()?.settingsClick()
+            dismiss()
+        }
+
+        binding.mainDrawerContribsContainer.setOnClickListener {
+            BreadCrumbLogEvent.logClick(requireActivity(), binding.mainDrawerContribsContainer)
+            callback()?.contribsClick()
+            dismiss()
+        }
+
+        binding.mainDrawerDonateContainer.setOnClickListener {
+            BreadCrumbLogEvent.logClick(requireActivity(), binding.mainDrawerDonateContainer)
+            DonorExperienceEvent.logAction("donate_start_click", "more_menu")
+            callback()?.donateClick()
+            dismiss()
+        }
+
+        binding.mainDrawerYearInReviewContainer.setOnClickListener {
+            YearInReviewEvent.submit(action = "start_click", slide = yirEntrySlide)
+            callback()?.yearInReviewClick()
+            dismiss()
+        }
+        binding.yearInReviewRedDot.isVisible = !Prefs.yearInReviewVisited
+
+        binding.mainDrawerEditContainer.setOnClickListener {
+            BreadCrumbLogEvent.logClick(requireActivity(), binding.mainDrawerEditContainer)
+            ActivityTabEvent.submit(activeInterface = "more_menu", action = "edit_click")
+            startActivity(SuggestedEditsTasksActivity.newIntent(requireContext()))
+            dismiss()
+        }
+
+        updateState()
+        return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+    override fun onStart() {
+        super.onStart()
+        BottomSheetBehavior.from(binding.root.parent as View).peekHeight = DimenUtil.displayHeightPx
+    }
+
+    private fun updateState() {
+        if (AccountUtil.isLoggedIn) {
+            if (AccountUtil.isTemporaryAccount) {
+                binding.mainDrawerAccountAvatar.setImageResource(R.drawable.ic_login_24px)
+                ImageViewCompat.setImageTintList(binding.mainDrawerAccountAvatar, getThemedColorStateList(requireContext(), R.attr.progressive_color))
+                binding.tempAccountName.text = AccountUtil.userName
+                binding.mainDrawerAccountName.isVisible = false
+                binding.mainDrawerLoginButton.textAlignment = View.TEXT_ALIGNMENT_TEXT_START
+                binding.mainDrawerLoginButton.text = getString(R.string.main_drawer_login)
+                binding.mainDrawerLoginButton.setTextColor(getThemedColorStateList(requireContext(), R.attr.progressive_color))
+                binding.mainDrawerLoginButton.isVisible = true
+            } else {
+                binding.mainDrawerAccountAvatar.setImageResource(R.drawable.ic_baseline_person_24)
+                ImageViewCompat.setImageTintList(binding.mainDrawerAccountAvatar, getThemedColorStateList(requireContext(), R.attr.secondary_color))
+                binding.mainDrawerAccountName.text = AccountUtil.userName
+                binding.mainDrawerAccountName.isVisible = true
+                binding.mainDrawerLoginButton.isVisible = false
+            }
+            binding.mainDrawerTalkContainer.isVisible = true
+            binding.mainDrawerTempAccountContainer.isVisible = AccountUtil.isTemporaryAccount
+            binding.mainDrawerWatchlistContainer.isVisible = !AccountUtil.isTemporaryAccount
+            binding.mainDrawerContribsContainer.isVisible = true
+            binding.mainDrawerEditContainer.isVisible = true
+        } else {
+            binding.mainDrawerAccountAvatar.setImageResource(R.drawable.ic_login_24px)
+            ImageViewCompat.setImageTintList(binding.mainDrawerAccountAvatar, getThemedColorStateList(requireContext(), R.attr.progressive_color))
+            binding.mainDrawerAccountName.isVisible = false
+            binding.mainDrawerTempAccountContainer.isVisible = false
+            binding.mainDrawerLoginButton.textAlignment = View.TEXT_ALIGNMENT_TEXT_START
+            binding.mainDrawerLoginButton.text = getString(R.string.main_drawer_login)
+            binding.mainDrawerLoginButton.setTextColor(getThemedColorStateList(requireContext(), R.attr.progressive_color))
+            binding.mainDrawerTalkContainer.isVisible = false
+            binding.mainDrawerWatchlistContainer.isVisible = false
+            binding.mainDrawerContribsContainer.isVisible = false
+            binding.mainDrawerEditContainer.isVisible = false
+        }
+        binding.mainDrawerGamesHubContainer.isVisible = WikiGames.WHICH_CAME_FIRST.isLangSupported(*WikipediaApp.instance.languageState.appLanguageCodes.toTypedArray())
+    }
+
+    private fun callback(): Callback? {
+        return FragmentUtil.getCallback(this, Callback::class.java)
+    }
+
+    companion object {
+        fun newInstance(): MenuNavTabDialog {
+            return MenuNavTabDialog()
+        }
+    }
+}
