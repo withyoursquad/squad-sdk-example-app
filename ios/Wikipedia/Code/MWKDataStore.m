@@ -738,18 +738,39 @@ NSString *const WMFCacheContextCrossProcessNotificiationChannelNamePrefix = @"or
 
 - (void)setupLegacyDataStore {
     NSString *pathToExclude = [self pathForSites];
-    NSError *directoryCreationError = nil;
-    if (![[NSFileManager defaultManager] createDirectoryAtPath:pathToExclude withIntermediateDirectories:YES attributes:nil error:&directoryCreationError]) {
-        DDLogError(@"Error creating MWKDataStore path: %@", directoryCreationError);
+    
+    // CORREÇÃO: Se o caminho for nulo ou vazio, use o diretório de Documentos padrão
+    if (pathToExclude == nil || [pathToExclude length] == 0) {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        pathToExclude = [paths firstObject];
+        // Adiciona uma subpasta para manter a estrutura da Wikipédia
+        pathToExclude = [pathToExclude stringByAppendingPathComponent:@"Sites"];
     }
+
+    NSError *directoryCreationError = nil;
+    // Tenta criar o diretório. Se pathToExclude for inválido, o erro será pego aqui sem crashar.
+    BOOL success = [[NSFileManager defaultManager] createDirectoryAtPath:pathToExclude
+                                              withIntermediateDirectories:YES
+                                                               attributes:nil
+                                                                    error:&directoryCreationError];
+    
+    if (!success || pathToExclude == nil) {
+        DDLogError(@"Erro crítico ao definir caminho: %@", directoryCreationError);
+        return; // Sai do método antes de tentar criar a NSURL e causar o crash
+    }
+
+    // Agora é seguro, pois garantimos que pathToExclude não é nil nem vazio
     NSURL *directoryURL = [NSURL fileURLWithPath:pathToExclude isDirectory:YES];
+    
     NSError *excludeBackupError = nil;
     if (![directoryURL setResourceValue:@(YES) forKey:NSURLIsExcludedFromBackupKey error:&excludeBackupError]) {
         DDLogError(@"Error excluding MWKDataStore path from backup: %@", excludeBackupError);
     }
+
     self.articleCache = [[NSCache alloc] init];
     self.articleCache.countLimit = 1000;
 }
+
 
 #pragma mark - path methods
 
@@ -758,7 +779,15 @@ NSString *const WMFCacheContextCrossProcessNotificiationChannelNamePrefix = @"or
 }
 
 - (NSString *)pathForSites {
-    return [self joinWithBasePath:@"sites"];
+    NSURL *groupURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"SUA_GROUP_ID_AQUI"];
+    NSString *path = [groupURL path];
+
+    if (path == nil || [path length] == 0) {
+        path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+        path = [path stringByAppendingPathComponent:@"WikipediaData"]; // Nome para evitar conflitos
+    }
+
+    return [path stringByAppendingPathComponent:@"Sites"];
 }
 
 - (NSString *)pathForDomainInURL:(NSURL *)url {

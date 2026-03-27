@@ -73,7 +73,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             button.trailingAnchor.constraint(equalTo: window.trailingAnchor, constant: -20),
             button.bottomAnchor.constraint(equalTo: window.safeAreaLayoutGuide.bottomAnchor, constant: -70),
             button.widthAnchor.constraint(equalToConstant: 80),
-            button.heightAnchor.constraint(equalToConstant: 48),
+            button.heightAnchor.constraint(equalToConstant: 48)
         ])
     }
 

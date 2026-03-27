@@ -2675,6 +2675,9 @@
 		D8FA19161E1BE069009675C3 /* WMFArticlePreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D2703A1D75ED5000D093A8 /* WMFArticlePreviewViewController.xib */; };
 		D8FAC7DD1D6F88AB00C2A6BC /* WMF.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D844D96C1D6CB2600042D692 /* WMF.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8FEECCD1DE3729400B883F0 /* WMFChange.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FEECCC1DE3729400B883F0 /* WMFChange.m */; };
+		E1AEB25F2F76E6A100935286 /* SquadSportsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = SQUAD0002E2E00000000000000 /* SquadSportsSDK */; };
+		E1AEB2612F76FBB100935286 /* Georgia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AEB2602F76FBB100935286 /* Georgia.ttf */; };
+		E1AEB2622F76FBC300935286 /* Georgia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AEB2602F76FBB100935286 /* Georgia.ttf */; };
 		E1CFD6E6210C103900D8E37C /* ExploreCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CA612920D1675800EF0C4A /* ExploreCardViewController.swift */; };
 		EB8237532970AE6A00FD629E /* WMFItemSourceExcludingActivityTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8237522970AE6A00FD629E /* WMFItemSourceExcludingActivityTypes.swift */; };
 		FF2090F02500247100849774 /* ThreeLineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2090EE2500247100849774 /* ThreeLineHeaderView.swift */; };
@@ -4709,6 +4712,7 @@
 		D8FFF6922031CB3D00A028E0 /* my */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = my; path = my.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		D8FFF6932031CB3E00A028E0 /* cy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = cy; path = cy.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		D8FFF6942031CB4000A028E0 /* tcy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = tcy; path = tcy.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		E1AEB2602F76FBB100935286 /* Georgia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Georgia.ttf; sourceTree = "<group>"; };
 		EB8237522970AE6A00FD629E /* WMFItemSourceExcludingActivityTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMFItemSourceExcludingActivityTypes.swift; sourceTree = "<group>"; };
 		FF0261872627B2D800CBD55F /* kcg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kcg; path = kcg.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF19C1AB260548FD000AC20B /* kcg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kcg; path = kcg.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -4778,6 +4782,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1AEB25F2F76E6A100935286 /* SquadSportsSDK in Frameworks */,
 				D844D9731D6CB2600042D692 /* WMF.framework in Frameworks */,
 				83AF34F724D3341E000046D6 /* BackgroundTasks.framework in Frameworks */,
 				D8D553621DF1B63200B90177 /* QuartzCore.framework in Frameworks */,
@@ -7891,6 +7896,7 @@
 		D499142C181D51DE00E6073C = {
 			isa = PBXGroup;
 			children = (
+				E1AEB2602F76FBB100935286 /* Georgia.ttf */,
 				81B26C352E6D733A00EADB09 /* Configurations */,
 				D499143E181D51DE00E6073C /* Wikipedia */,
 				67F47C0E2AAA6E16006E17FA /* Packages */,
@@ -9066,7 +9072,6 @@
 					};
 					0E8380621D64989F0076EDE4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = AKK7J2GV64;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -9087,13 +9092,11 @@
 					};
 					BC4273511A7C736800068882 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = AKK7J2GV64;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D4991434181D51DE00E6073C;
 					};
 					D4991434181D51DE00E6073C = {
-						DevelopmentTeam = AKK7J2GV64;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -9118,7 +9121,6 @@
 					};
 					D8479FAA1F222FE80025FD7A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = AKK7J2GV64;
 						ProvisioningStyle = Automatic;
 					};
 					D870215F1EBA63EE000D02D6 = {
@@ -9128,12 +9130,6 @@
 					D8B589A421CD05070027083A = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1150;
-					};
-					D8CE24D71E698E2400DAE2E0 = {
-						DevelopmentTeam = AKK7J2GV64;
-					};
-					D8EC3DCE1E9BDA35006712EB = {
-						DevelopmentTeam = AKK7J2GV64;
 					};
 				};
 			};
@@ -9366,6 +9362,7 @@
 				B0866F471CCAEBE40088A789 /* WMFArticleLanguagesSectionFooter.xib in Resources */,
 				B0B4236D1EF9D6D500D3DC4C /* OnThisDayViewControllerHeader.xib in Resources */,
 				D8D92B5C1DF22E1700B95311 /* NotificationBackgroundErrorIcon.png in Resources */,
+				E1AEB2612F76FBB100935286 /* Georgia.ttf in Resources */,
 				0E4D071D1CC5526200AE968B /* WMFLanguageCell.xib in Resources */,
 				6780D5C0237AF8AE0087A5D1 /* DiffToolbarView.xib in Resources */,
 				D801C9361EB9344E001FA294 /* InfoPlist.strings in Resources */,
@@ -9459,6 +9456,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1AEB2622F76FBC300935286 /* Georgia.ttf in Resources */,
 				D8479FAE1F222FE90025FD7A /* Stickers.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -12557,7 +12555,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Widgets/Info.plist;
@@ -12570,7 +12568,7 @@
 				MARKETING_VERSION = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.Widgets;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -12596,7 +12594,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Widgets/Info.plist;
@@ -12609,7 +12607,7 @@
 				MARKETING_VERSION = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.Widgets;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -12635,7 +12633,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Widgets/Info.plist;
@@ -12649,7 +12647,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.Widgets;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -12675,7 +12673,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Widgets/Info.plist;
@@ -12688,7 +12686,7 @@
 				MARKETING_VERSION = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.Widgets;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -12714,7 +12712,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Widgets/Info.plist;
@@ -12727,7 +12725,7 @@
 				MARKETING_VERSION = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.Widgets;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -12753,7 +12751,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Widgets/Info.plist;
@@ -12766,7 +12764,7 @@
 				MARKETING_VERSION = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.Widgets;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -12792,7 +12790,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Widgets/Info.plist;
@@ -12806,7 +12804,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.Widgets;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -12853,7 +12851,7 @@
 				CODE_SIGN_ENTITLEMENTS = ContinueReadingWidget/ContinueReadingWidget.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = ContinueReadingWidget/Info.plist;
@@ -12864,7 +12862,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.ContinueReadingWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.ContinueReadingWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -12879,7 +12877,7 @@
 				CODE_SIGN_ENTITLEMENTS = ContinueReadingWidget/ContinueReadingWidget.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = ContinueReadingWidget/Info.plist;
@@ -12890,7 +12888,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.ContinueReadingWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.ContinueReadingWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -12978,7 +12976,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -12993,7 +12991,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = Wikipedia;
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -13012,7 +13010,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
@@ -13125,7 +13123,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -13140,7 +13138,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = Wikipedia;
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -13160,7 +13158,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -13174,7 +13172,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -13194,7 +13192,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -13208,7 +13206,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -13227,7 +13225,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
@@ -13267,7 +13265,7 @@
 				CODE_SIGN_ENTITLEMENTS = ContinueReadingWidget/ContinueReadingWidget.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = ContinueReadingWidget/Info.plist;
@@ -13278,7 +13276,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.ContinueReadingWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.ContinueReadingWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -13295,11 +13293,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Wikipedia Stickers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.WikipediaStickers;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.WikipediaStickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -13357,7 +13355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -13382,7 +13380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -13412,7 +13410,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Widgets/Info.plist;
@@ -13425,7 +13423,7 @@
 				MARKETING_VERSION = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.Widgets;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.Widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -13449,7 +13447,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
@@ -13461,7 +13459,7 @@
 				);
 				MARKETING_VERSION = "";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -13484,7 +13482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -13554,7 +13552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -13587,7 +13585,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -13620,7 +13618,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -13654,7 +13652,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -13687,7 +13685,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -13720,7 +13718,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -13753,7 +13751,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -13828,7 +13826,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
@@ -13840,7 +13838,7 @@
 				);
 				MARKETING_VERSION = "";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -13864,7 +13862,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
@@ -13876,7 +13874,7 @@
 				);
 				MARKETING_VERSION = "";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -13900,7 +13898,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
@@ -13913,7 +13911,7 @@
 				MARKETING_VERSION = "";
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -13937,7 +13935,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
@@ -13949,7 +13947,7 @@
 				);
 				MARKETING_VERSION = "";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -13973,7 +13971,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
@@ -13985,7 +13983,7 @@
 				);
 				MARKETING_VERSION = "";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -14009,7 +14007,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
@@ -14021,7 +14019,7 @@
 				);
 				MARKETING_VERSION = "";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -14045,7 +14043,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
@@ -14058,7 +14056,7 @@
 				MARKETING_VERSION = "";
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -14115,7 +14113,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
@@ -14308,7 +14306,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.wikimedia.wikipedia$(SIGNING_DISAMBIGUATOR)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = Wikipedia;
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -14329,7 +14327,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -14344,7 +14342,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = Wikipedia;
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -14490,7 +14488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Wikipedia Stickers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.wikimedia.wikipedia$(SIGNING_DISAMBIGUATOR).WikipediaStickers";
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.WikipediaStickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -14507,11 +14505,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Wikipedia Stickers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta.WikipediaStickers;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta.WikipediaStickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -14528,12 +14526,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Wikipedia Stickers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha.WikipediaStickers;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha.WikipediaStickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -14550,11 +14548,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Wikipedia Stickers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.WikipediaStickers;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.WikipediaStickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -14571,11 +14569,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Wikipedia Stickers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta.WikipediaStickers;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta.WikipediaStickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -14592,11 +14590,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Wikipedia Stickers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.WikipediaStickers;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.WikipediaStickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -14613,12 +14611,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Wikipedia Stickers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha.WikipediaStickers;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha.WikipediaStickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -14706,7 +14704,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -14718,7 +14716,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = Wikipedia;
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -14739,7 +14737,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
@@ -14750,7 +14748,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -14771,7 +14769,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
@@ -14782,7 +14780,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -14802,7 +14800,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -14841,7 +14839,7 @@
 				CODE_SIGN_ENTITLEMENTS = ContinueReadingWidget/ContinueReadingWidget.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -14857,7 +14855,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.ContinueReadingWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.ContinueReadingWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -14873,7 +14871,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -14881,7 +14879,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Wikipedia Stickers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.WikipediaStickers;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.WikipediaStickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -14935,7 +14933,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -15029,7 +15027,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -15052,7 +15050,7 @@
 					SystemConfiguration,
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "Wikipedia Alpha";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -15071,7 +15069,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -15110,7 +15108,7 @@
 				CODE_SIGN_ENTITLEMENTS = ContinueReadingWidget/ContinueReadingWidget.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = ContinueReadingWidget/Info.plist;
@@ -15122,7 +15120,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha.ContinueReadingWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha.ContinueReadingWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -15252,7 +15250,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -15271,7 +15269,7 @@
 					WebKit,
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "Wikipedia Alpha";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -15291,7 +15289,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -15331,7 +15329,7 @@
 				CODE_SIGN_ENTITLEMENTS = ContinueReadingWidget/ContinueReadingWidget.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -15347,7 +15345,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha.ContinueReadingWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha.ContinueReadingWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -15427,7 +15425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -15449,7 +15447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -15472,7 +15470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -15494,7 +15492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -15516,7 +15514,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -15538,7 +15536,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -15629,7 +15627,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -15644,7 +15642,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = Wikipedia;
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -15664,7 +15662,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -15678,7 +15676,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -15697,7 +15695,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
@@ -15737,7 +15735,7 @@
 				CODE_SIGN_ENTITLEMENTS = ContinueReadingWidget/ContinueReadingWidget.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = ContinueReadingWidget/Info.plist;
@@ -15748,7 +15746,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta.ContinueReadingWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta.ContinueReadingWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -15877,7 +15875,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -15889,7 +15887,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = Wikipedia;
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -15910,7 +15908,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
@@ -15921,7 +15919,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -15941,7 +15939,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -15980,7 +15978,7 @@
 				CODE_SIGN_ENTITLEMENTS = ContinueReadingWidget/ContinueReadingWidget.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -15996,7 +15994,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta.ContinueReadingWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta.ContinueReadingWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -16083,7 +16081,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -16109,7 +16107,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -16135,7 +16133,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -16162,7 +16160,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -16188,7 +16186,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -16214,7 +16212,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -16240,7 +16238,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -16296,7 +16294,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
@@ -16314,7 +16312,7 @@
 					WebKit,
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -16335,7 +16333,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -16349,7 +16347,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -16369,7 +16367,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -16383,7 +16381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -16403,7 +16401,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -16425,7 +16423,7 @@
 					SystemConfiguration,
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -16455,7 +16453,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.wikimedia.wikipedia$(SIGNING_DISAMBIGUATOR)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.wikimedia.wikipedia6YLZHFGRVE--SIGNING-DISAMBIGUATOR-";
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -16476,7 +16474,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
@@ -16487,7 +16485,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -16508,7 +16506,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
@@ -16526,7 +16524,7 @@
 					WebKit,
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -16547,7 +16545,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -16561,7 +16559,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -16581,7 +16579,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -16595,7 +16593,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfbeta;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfbeta;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -16615,7 +16613,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -16629,7 +16627,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -16649,7 +16647,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = AKK7J2GV64;
+				DEVELOPMENT_TEAM = 6YLZHFGRVE;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -16671,7 +16669,7 @@
 					SystemConfiguration,
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia.tfalpha;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wikimedia.wikipedia6YLZHFGRVE.tfalpha;
 				PRODUCT_MODULE_NAME = Wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -16898,8 +16896,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hCaptcha/HCaptcha-ios-sdk";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.6.0;
+				kind = exactVersion;
+				version = 2.7.0;
 			};
 		};
 		67A770C6251BFE0400F94EF9 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {

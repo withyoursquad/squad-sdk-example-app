@@ -1,59 +1,68 @@
 {
-  "pins": [
+  "pins" : [
     {
-      "identity": "cocoalumberjack",
-      "kind": "remoteSourceControl",
-      "location": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
-      "state": {
-        "revision": "a9ed4b6f9bdedce7d77046f43adfb8ce1fd54114",
-        "version": "3.9.0"
+      "identity" : "cocoalumberjack",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+      "state" : {
+        "revision" : "a9ed4b6f9bdedce7d77046f43adfb8ce1fd54114",
+        "version" : "3.9.0"
       }
     },
     {
-      "identity": "hcaptcha-ios-sdk",
-      "kind": "remoteSourceControl",
-      "location": "https://github.com/hCaptcha/HCaptcha-ios-sdk",
-      "state": {
-        "revision": "f95bf7391735fcbc8be02615ee698adbbe09b24d",
-        "version": "2.13.0"
+      "identity" : "hcaptcha-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hCaptcha/HCaptcha-ios-sdk",
+      "state" : {
+        "revision" : "76dbfff44b7d5c45a075368edf4935627384c6d7",
+        "version" : "2.7.0"
       }
     },
     {
-      "identity": "rxswift",
-      "kind": "remoteSourceControl",
-      "location": "https://github.com/ReactiveX/RxSwift",
-      "state": {
-        "revision": "132aea4f236ccadc51590b38af0357a331d51fa2",
-        "version": "6.10.2"
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift",
+      "state" : {
+        "revision" : "132aea4f236ccadc51590b38af0357a331d51fa2",
+        "version" : "6.10.2"
       }
     },
     {
-      "identity": "sdwebimage",
-      "kind": "remoteSourceControl",
-      "location": "https://github.com/SDWebImage/SDWebImage.git",
-      "state": {
-        "revision": "2de3a496eaf6df9a1312862adcfd54acd73c39c0",
-        "version": "5.21.7"
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "2de3a496eaf6df9a1312862adcfd54acd73c39c0",
+        "version" : "5.21.7"
       }
     },
     {
-      "identity": "squad-sports-ios",
-      "kind": "remoteSourceControl",
-      "location": "https://github.com/withyoursquad/squad-sports-ios.git",
-      "state": {
-        "revision": "f1003562fa42570babe31cf4f80cc3e8f8532f47",
-        "version": "1.5.0"
+      "identity" : "squad-sports-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/withyoursquad/squad-sports-ios.git",
+      "state" : {
+        "revision" : "f6702db37e72eb6c354eb7c34aec28f455c1d74f",
+        "version" : "1.6.0"
       }
     },
     {
-      "identity": "swift-log",
-      "kind": "remoteSourceControl",
-      "location": "https://github.com/apple/swift-log",
-      "state": {
-        "revision": "bbd81b6725ae874c69e9b8c8804d462356b55523",
-        "version": "1.10.1"
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log",
+      "state" : {
+        "revision" : "bbd81b6725ae874c69e9b8c8804d462356b55523",
+        "version" : "1.10.1"
+      }
+    },
+    {
+      "identity" : "twilio-voice-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/twilio/twilio-voice-ios.git",
+      "state" : {
+        "revision" : "62912513388001394d093b85a6269bf3206cac13",
+        "version" : "6.13.6"
       }
     }
   ],
-  "version": 2
+  "version" : 2
 }
